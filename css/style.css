@@ -765,7 +765,7 @@ table thead tr th {
 .bread-overlay {
   top: inherit;
   bottom: 0;
-  background: linear-gradient(to right, #3A3089, #5d0326);
+  background: linear-gradient(to right, #000000, #0a6239);
   opacity: 0.7;
 }
 
