@@ -80,7 +80,7 @@ if(get_magic_quotes_gpc()) {
 
 //$address = "example@themeforest.net";
 
-$address = "cyclone.themes@gmail.com";
+$address = "sistemas@anpr.org.mx";
 
 
 
@@ -96,7 +96,7 @@ $address = "cyclone.themes@gmail.com";
 
 
 
-$e_subject = 'Contact Form';
+// $e_subject = '$name . ' se ha contactado con usted a través del sitio web.';
 
 
 
