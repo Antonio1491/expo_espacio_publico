@@ -109,10 +109,11 @@
           url : 'mail/contact.php',
           type : 'POST',
           data : {
-            fname : $('input[name="first_name"]').val(),
-            lname : $('input[name="last_name"]').val(),
+            fname : $('input[name="full_name"]').val(),
+            // lname : $('input[name="last_name"]').val(),
             email : $('input[name="email"]').val(),
             phone : $('input[name="phone"]').val(),
+            subject : $('input[name="subject"]').val(),
             comments : $('textarea[name="comments"]').val(),
           },
           success : function( result ){

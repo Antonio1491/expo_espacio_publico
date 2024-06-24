@@ -20,13 +20,15 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
 
 
-$fname     = $_POST['first_name'];
+$fname = $_POST['fname'];
 
-$lname     = $_POST['last_name'];
+// $lname     = $_POST['last_name'];
 
 $email    = $_POST['email'];
 
 $phone     = $_POST['phone'];
+
+$e_subject   = $_POST['subject'];
 
 $comments = $_POST['comments'];
 
@@ -34,25 +36,34 @@ $comments = $_POST['comments'];
 
 if(trim($fname) == '') {
 
-	echo '<div class="alert alert-error">You must enter your first name.</div>';
+	echo '<div class="alert alert-error">Debe ingresar su nombre.</div>';
 
 	exit();
 
-}else if(trim($lname) == '') {
+}
+// else if(trim($lname) == '') {
 
-	echo '<div class="alert alert-error">You must enter your last name.</div>';
+// 	echo '<div class="alert alert-error">You must enter your last name.</div>';
+
+// 	exit();
+
+// }
+else if(trim($subject) == '') {
+
+	echo '<div class="alert alert-error">Debe ingresar un asunto.</div>';
 
 	exit();
 
-}else if(trim($email) == '') {
+}
+else if(trim($email) == '') {
 
-	echo '<div class="alert alert-error">You must enter email address.</div>';
+	echo '<div class="alert alert-error">Debe ingresar su Email.</div>';
 
 	exit();
 
 } else if(!isEmail($email)) {
 
-	echo '<div class="alert alert-error">You must enter a valid email address.</div>';
+	echo '<div class="alert alert-error">Ingrese un email valido.</div>';
 
 	exit();
 
@@ -60,11 +71,11 @@ if(trim($fname) == '') {
 
 
 
-if(get_magic_quotes_gpc()) {
+// if(get_magic_quotes_gpc()) {
 
 	$comments = stripslashes($comments);
 
-}
+// }
 
 
 
@@ -110,11 +121,11 @@ $address = "sistemas@anpr.org.mx";
 
 
 
-$e_body = "You have been contacted by $name, their additional message is as follows." . PHP_EOL . PHP_EOL;
+$e_body = "Te han contactado $fname, su mensaje es el siguiente." . PHP_EOL . PHP_EOL;
 
 $e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
 
-$e_reply = "You can contact $name via email, $email";
+$e_reply = "Puedes contactar $fname vía email, $email";
 
 
 
@@ -144,9 +155,9 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 	echo "<div class='alert alert-success'>";
 
-	echo "<h4>Email Sent Successfully.</h4>";
+	echo "<h4>Correo electrónico enviado correctamente.</h4>";
 
-	echo "<p>Thank you <strong>$name</strong>, your message has been submitted to us.</p>";
+	echo "<p>Gracias <strong>$name</strong>, Su mensaje ha sido enviado.</p>";
 
 	echo "</div>";
 
