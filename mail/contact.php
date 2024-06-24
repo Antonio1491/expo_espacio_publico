@@ -48,7 +48,7 @@ if(trim($fname) == '') {
 // 	exit();
 
 // }
-else if(trim($subject) == '') {
+else if(trim($e_subject) == '') {
 
 	echo '<div class="alert alert-error">Debe ingresar un asunto.</div>';
 
@@ -157,7 +157,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 	echo "<h4>Correo electrónico enviado correctamente.</h4>";
 
-	echo "<p>Gracias <strong>$name</strong>, Su mensaje ha sido enviado.</p>";
+	echo "<p>Gracias <strong>$fname</strong>, Su mensaje ha sido enviado.</p>";
 
 	echo "</div>";
 
