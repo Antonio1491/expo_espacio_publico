@@ -43,7 +43,6 @@ body {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 600;
   font-family: "Inter", sans-serif;
-  text-transform: capitalize;
   margin: 0 0 1rem;
   color: #333333;
   line-height: 1.22em;
@@ -613,10 +612,6 @@ img {
   text-transform: uppercase;
 }
 
-.textcap {
-  text-transform: capitalize;
-}
-
 .form-group {
   width: 100%;
   display: inline-block;
@@ -758,15 +753,14 @@ table thead tr th {
 .color-overlay {
   top: inherit;
   bottom: 0;
-  background: linear-gradient(to right, #000000, #272727d6);
-  /* background: linear-gradient(to right, #1b1b1b, #333333); */
+  background: linear-gradient(to right, #1b1b1b, #333333);
   opacity: 0.9;
 }
 
 .bread-overlay {
   top: inherit;
   bottom: 0;
-  background: linear-gradient(to right, #000000, #0a6239);
+  background: linear-gradient(to right, #3A3089, #5d0326);
   opacity: 0.7;
 }
 
@@ -1027,7 +1021,6 @@ button {
   font-size: 16px;
   text-align: center;
   padding: 15px 25px;
-  text-transform: capitalize;
   transition: all ease-in-out 0.5s;
   background: #3ec8a5;
   color: #fff;
@@ -1176,7 +1169,6 @@ input[type=submit]:hover {
 .accrodion-grp .accrodion .accrodion-title h6 {
   margin: 0;
   position: relative;
-  text-transform: capitalize;
   border: none;
 }
 .accrodion-grp .accrodion .accrodion-title h6:before {
@@ -1440,7 +1432,6 @@ header #navbar {
 }
 .main_header_area .register-login .dropdown a {
   color: #707070 !important;
-  text-transform: capitalize;
 }
 .main_header_area .register-login .btn-info {
   border: none;
@@ -3312,4 +3303,4 @@ ul.sidebar-category li.active a {
   background-color: #f7f6f7;
   color: #515151;
   border-top: 3px solid #1e85be;
-}/*# sourceMappingURL=style.css.map */
+}
