@@ -2303,3 +2303,51 @@ ul.sidebar-category {
     color: #515151;
     border-top: 3px solid #1e85be;
 }
+
+.carousel-patrocinadores{
+        padding-top: 40px;
+    }
+    .partner-list {
+    display: flex;
+    align-items: center;  /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    height: 100%;  /* Asegura que el contenedor ocupe el 100% de su altura */
+    text-align: center;  /* Asegura que las imágenes estén centradas */
+}
+
+.partner-list img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+   .carousel-patrocinadores .slick-slide {
+    margin: 0 10px; /* Espacio entre los elementos del carrusel */
+}
+
+.carousel-patrocinadores .partner-list {
+    text-align: center; /* Centrar imágenes dentro de sus contenedores */
+}
+
+.carousel-patrocinadores .slick-list {
+    overflow: hidden;
+}
+
+.carousel-patrocinadores .slick-slide img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+.partners_inner_custom .partner-item {
+    flex: 0 0 20%; /* 20% de ancho para cada columna para hacer 5 elementos por fila */
+    max-width: 20%;
+    text-align: center; /* Centrar el contenido dentro del div */
+}
+
+.partners_inner_custom .partner-image img {
+    width: 160px;
+    height: 163px;
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsión */
+    display: block;
+    margin: 0 auto; /* Centrar la imagen dentro del div */
+}
