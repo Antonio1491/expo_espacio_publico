@@ -768,7 +768,13 @@
                     </div>
                     <div class="video-figure"></div>
                 </div>
-
+<!-- Contenedor del video pop-up -->
+<div id="videoPopup" class="video-popup">
+    <div class="video-popup-content">
+        <span class="close">&times;</span>
+        <iframe id="videoIframe" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+</div>
             </div>
         </div>
         <div class="theme-overlay"></div>
@@ -1275,5 +1281,35 @@
       });
     });
 
+//POP UP VIDEO 
+document.querySelector('.js-video-button').addEventListener('click', function() {
+    var videoSrc = 'https://www.youtube.com/embed/x4Xjw7JVr_Y?autoplay=1';
+
+    document.getElementById('videoIframe').src = videoSrc;
+    document.getElementById('videoPopup').style.display = 'block';
+    
+    // Deshabilita el scroll en la página
+    document.body.style.overflow = 'hidden';
+});
+
+document.querySelector('.close').addEventListener('click', function() {
+    document.getElementById('videoIframe').src = '';
+    document.getElementById('videoPopup').style.display = 'none';
+
+    // Habilita el scroll en la página
+    document.body.style.overflow = 'auto';
+});
+
+// Cierra el pop-up al hacer clic fuera del video
+window.addEventListener('click', function(event) {
+    var videoPopup = document.getElementById('videoPopup');
+    if (event.target == videoPopup) {
+        document.getElementById('videoIframe').src = '';
+        videoPopup.style.display = 'none';
+        
+        // Habilita el scroll en la página
+        document.body.style.overflow = 'auto';
+    }
+});
 </script>
 
