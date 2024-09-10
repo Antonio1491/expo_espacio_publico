@@ -115,29 +115,39 @@
                         <p class="mb-4">Participa como expositor en la única exposición especializada en el segmento de parques y espacios públicos en América Latina. Promueve tus productos y servicios y coloca tu marca ante cientos de compradores potenciales. 
                             <br><br>
                             
-                        <div class="event-quote p-4 bg-grey d-md-flex align-items-center justify-content-between mb-4 text-center text-md-start">
-                            <i class="fa fa-quote-left p-4 bg-theme white fs-1 mb-md-0 mb-2"></i>
-                            <p class="mb-0 ps-md-4">En ediciones anteriores de Expo Espacio Público, los expositores tuvieron la oportunidad de conocer clientes potenciales, contactar funcionarios públicos y promotores inmobiliarios a nivel regional y nacional, logrando así fortalecer alianzas entre ellos. </p>
-                        </div>     
-                        <h4>Tipo de Expositores:</h4>   
-                        <div class="row mb-4">
-                            <div class="col-lg-6 mb-2">
-                                <ul class="list">
-                                    <li class="pb-2"><i class="fa fa-angle-right me-2"></i> Explora el mercado</li>
-                                    <li class="pb-2"><i class="fa fa-angle-right me-2"></i> Conoce a los proveedores</li>
-                                    <li class="pb-2"><i class="fa fa-angle-right me-2"></i> Intercambia experiencias</li>
-                                    <!-- <li><i class="fa fa-angle-right me-2"></i> Aenean per Penatibus</li> -->
-                                </ul>
+                            <div class="event-quote p-4 bg-grey d-md-flex align-items-center justify-content-between mb-4 text-center text-md-start">
+                                <i class="fa fa-quote-left p-4 bg-theme white fs-1 mb-md-0 mb-2"></i>
+                                <p class="mb-0 ps-md-4">En ediciones anteriores de Expo Espacio Público, los expositores tuvieron la oportunidad de conocer clientes potenciales, contactar funcionarios públicos y promotores inmobiliarios a nivel regional y nacional, logrando así fortalecer alianzas entre ellos. </p>
                             </div>
-                            <div class="col-lg-6">
-                                <ul class="list">
-                                    <li class="pb-2"><i class="fa fa-angle-right me-2"></i> Conoce las tendencias</li>
-                                    <li class="pb-2"><i class="fa fa-angle-right me-2"></i> Encuentra productos innovadores</li>
-                                    <li class="pb-2"><i class="fa fa-angle-right me-2"></i> Compara calidad, precios y prestaciones</li>
-                                    <!-- <li><i class="fa fa-angle-right me-2"></i> Aenean per Penatibus</li> -->
-                                </ul>
+                            <h4>Tipo de Expositores:</h4>   
+                            <div class="row mb-4">
+                                <div class="col-lg-6 mb-2">
+                                    <ul class="list">
+                                        <li style="background-position: center;  height: 150px; background-image: url('images/Accesos-automatizados.png');" class="expo-item pb-2">
+                                            <i class="fa fa-angle-right me-2"></i> Explora el mercado<br>ㅤ
+                                        </li>
+                                        <li style="background-position: center;  height: 150px; background-image: url('images/Equipo-de-proveedores.png');" class="expo-item pb-2">
+                                            <i class="fa fa-angle-right me-2"></i> Conoce a los proveedores<br>ㅤ
+                                        </li>
+                                        <li style="background-position: center;  height: 150px; background-image: url('images/FOTOS-Luminarias.png');" class="expo-item pb-2">
+                                            <i class="fa fa-angle-right me-2"></i> Intercambia experiencias<br>ㅤ
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="list">
+                                        <li style="background-position: center;  height: 150px; background-image: url('images/tendencias.png');" class="expo-item pb-2">
+                                            <i class="fa fa-angle-right me-2"></i> Conoce las tendencias<br>ㅤ
+                                        </li>
+                                        <li style="background-position: center;  height: 150px; background-image: url('images/Gimnasios-al-aire-libre.png');" class="expo-item pb-2">
+                                            <i class="fa fa-angle-right me-2"></i> Encuentra productos innovadores<br>ㅤ
+                                        </li>
+                                        <li style="background-position: center;  height: 150px; background-image: url('images/Pinturas-y-recubrimientos.png');" class="expo-item pb-2">
+                                            <i class="fa fa-angle-right me-2"></i> Compara calidad, precios y prestaciones
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
 
@@ -165,7 +175,6 @@
                                     </div>
                                 </div>
                             </div> -->
-
 
                             <div class="sidebar-item bg-grey p-4 pb-3 mb-4">
                                 <h5 class="bg-white p-3 text-lg-start text-center">Información del Evento</h5>
@@ -357,7 +366,6 @@
     </div>
 
         
-
 
         
         <div class="white-overlay opacity-75"></div>
@@ -566,7 +574,6 @@
         </form>
     </div>
 
-
     <!-- *Scripts* -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -589,5 +596,46 @@
      });
  
  </script>
- 
+
+<style>
+    /* List items */
+    .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.expo-item {
+    width: 100%;
+    margin: 10px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    /* Añadimos una capa oscura para mejorar la visibilidad del texto */
+    background: rgba(0, 0, 0, 0.5); /* Cambia la oscuridad aquí */
+}
+
+.expo-item:hover {
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.3); /* Menos oscuro al pasar el cursor */
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.5);
+    /* Aumenta la escala del item al pasar el cursor */
+    transform: scale(1.05);
+}
+
+.expo-item i {
+    color: #27debf;
+}
+
+/* Añadir una sombra al texto para mejor legibilidad */
+.expo-item {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+</style>
  
