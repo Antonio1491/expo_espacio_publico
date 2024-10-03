@@ -51,3 +51,12 @@
   background-color: #ffffff; /* Color blanco */
   margin: 20px 0; /* Espaciado arriba y abajo */
 }
+
+.mapasvg{
+  width: 90%;
+}
+
+.content-map{
+  display: flex;
+  justify-content: center; /* alinea horizontalmente */
+}
